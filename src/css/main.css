@@ -6,7 +6,16 @@
 }
 
 body {
-    background: linear-gradient(160deg, #020024 17%, #474a59 49%, #565b71 100%);
+    background: #020024;
+
+background: linear-gradient(180deg, #020024 50%, #1d1556 100%);
+
+background: -moz-linear-gradient(180deg, #020024 50%, #1d1556 100%);
+
+background: -webkit-linear-gradient(180deg, #020024 50%, #1d1556 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#020024", endColorstr="#1C1554", GradientType=1 );
+
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
     height: 100vh;
@@ -23,18 +32,22 @@ body {
     padding: 10px;
     border-radius: 5px;
     background-color: #f1e0c5;
+    box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.511);
 }
 
 .container h1 {
+    font-family: roboto, arial, sans-serif;
     font-size: 35px;
     margin: 30px;
     text-align: center;
 }
 
 .container p {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;;
     text-indent: 14px;
-    font-weight: 600;
+    font-weight: 700;
     margin: 5px;
+    color: #151515;
 }
 
 form {
@@ -55,10 +68,10 @@ form {
 }
 
 .button {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background-color: #020024;
     color: #f5f5f5;
     cursor: pointer;
-    
 }
 
 .input {
@@ -71,7 +84,10 @@ form {
     color: #fefefe;
 };
 
-
+.resultCPF {
+    text-align: center;
+    width: 100%;
+}
 
 @media screen and (max-width: 600px) {
 
@@ -85,18 +101,13 @@ form {
         font-size: 27px;
     }
 
-    .container p {
+    .container p, .input {
         font-size: 16px;
     }
 
     form {
         width: 350px;
     }
-
-    .input {
-        font-size: 16px;
-    }
-
 
 }
 

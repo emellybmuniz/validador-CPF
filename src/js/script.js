@@ -13,10 +13,10 @@ cpfInput.addEventListener('input', (e) => {
     e.target.value = value;
 })
 
-// Validação
+
+// Validar funcionalidade
 buttonCpf.addEventListener('click', (e) => {
-    e.preventDefault();
-    result.textContent = ''; 
+    e.preventDefault(); 
     const cleanedCpf = cleanCpf(cpfInput.value);
     validatingCPF(cleanedCpf);
     
@@ -31,13 +31,14 @@ const cleanCpf = (cpfValue) => {
 const validatingCPF = (cpfValue) => {
 
     if (cpfValue.length !== 11) {
-        return result.innerHTML += ' CPF INVÁLIDO! CERTIFIQUE-SE DE DIGITAR 11 NÚMEROS';
+        result.style.color = "#962626";
+        return result.textContent += 'CPF INVÁLIDO! CERTIFIQUE-SE DE DIGITAR 11 NÚMEROS.';      
     }
 
     const cpfArray = Array.from(cpfValue);
     const nineDigits = cpfArray.slice(0, 9);
 
-    // Primeiro dígito verificador
+    // Calc Primeiro dígito verificador
     let sum = 0;
     for (let i = 0; i < 9; i++) {
         sum += Number(nineDigits[i]) * (10 - i);
@@ -45,7 +46,7 @@ const validatingCPF = (cpfValue) => {
     let firstVerificador = (sum * 10) % 11;
     firstVerificador = firstVerificador === 10 ? 0 : firstVerificador;
 
-    // segundo dígito verificador
+    // Calc segundo dígito verificador
     sum = 0;
     const cpfWithFirstDigit = [...nineDigits, firstVerificador];
     for (let i = 0; i < 10; i++) {
@@ -55,9 +56,11 @@ const validatingCPF = (cpfValue) => {
     secondVerificador = secondVerificador === 10 ? 0 : secondVerificador;
 
     if (Number(cpfArray[9]) === firstVerificador && Number(cpfArray[10]) === secondVerificador) {
-        result.innerHTML += ` CPF VÁLIDO`;
+        result.textContent = `CPF VÁLIDO`;
+        result.style.color = "#17691C";
     } else {
-        result.innerHTML += ' CPF INVÁLIDO';
+        result.innerHTML = 'CPF INVÁLIDO';
+        result.style.color = "#962626";
     }
 };
 
