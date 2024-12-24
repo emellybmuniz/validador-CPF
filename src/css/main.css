@@ -6,10 +6,7 @@
 }
 
 body {
-    background: #3d5745;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to bottom, #224137, #3d5745);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to bottom, #224137, #3d5745); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+    background: linear-gradient(160deg, #020024 17%, #474a59 49%, #565b71 100%);
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
     height: 100vh;
@@ -20,47 +17,86 @@ background: linear-gradient(to bottom, #224137, #3d5745); /* W3C, IE 10+/ Edge, 
 .container {
     display: flex;
     flex-flow: column;
-    justify-content: center;
     align-items: center;
-    width: 500px;   
+    width: 600px; 
+    height: 400px;  
     padding: 10px;
     border-radius: 5px;
-    background-color: #ffffff;
-
+    background-color: #f1e0c5;
 }
 
 .container h1 {
-    padding: 10px;
+    font-size: 35px;
+    margin: 30px;
     text-align: center;
 }
 
 .container p {
     text-indent: 14px;
+    font-weight: 600;
     margin: 5px;
 }
 
-.form {
+form {
     display: flex;
     flex-direction: column;
     padding: 10px;
+    width: 400px;
     flex-grow: 1px;
-    width: 100%;
+    gap: 5px;
 }
 
-.form input {
-    padding: 10px 0px;
-    margin: 10px 0px;
+.input, .button {
+    padding: 8px;
+    outline: none;
+    border: 1px solid #535353;
+    border-radius: 4px;
+    font-weight: 600;
 }
 
-#button-submit {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    background-color: #224137;
-    color: white;
-    font-size: 1.1rem;
-    padding: 10px 0px;
+.button {
+    background-color: #020024;
+    color: #f5f5f5;
+    cursor: pointer;
     
+}
+
+.input {
+    font-size: 18px;
+    text-align: center;
+}
+
+.button:hover {
+    background-color: #565b71;
+    color: #fefefe;
+};
+
+
+
+@media screen and (max-width: 600px) {
+
+    .container {
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+    }
+
+    .container h1 {
+        font-size: 27px;
+    }
+
+    .container p {
+        font-size: 16px;
+    }
+
+    form {
+        width: 350px;
+    }
+
+    .input {
+        font-size: 16px;
+    }
+
+
 }
 
