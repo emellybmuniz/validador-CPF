@@ -64,9 +64,9 @@ $ open index.html  # Ou dê um duplo clique no arquivo
 ```
 
 ## 💡 Como Usar
-1. Open the `index.html` file in your web browser.
-2. Enter an 11-digit CPF number in the input field.
-3. The application will immediately display a message indicating whether the CPF is valid or invalid.
+1. Abra o arquivo index.html no seu navegador.
+2. Digite um número de CPF de 11 dígitos no campo de entrada.
+3. O aplicativo exibirá imediatamente uma mensagem indicando se o CPF é válido ou não.
 
 ## 🤝 Contribuição
 
