@@ -1,5 +1,6 @@
 # CPF Validator
-[🇺🇸 English](./README.md) | [🇧🇷 Português](./README-pt-BR.md)
+[🇺🇸 English](./README) | [🇧🇷 Português](./README-pt-br.md)<img width="630" height="24" alt="image" src="https://github.com/user-attachments/assets/d7d1535e-b7dd-4af3-ad25-bf175389c0f4" />
+
 
 ![GitHub License](https://img.shields.io/github/license/emellybmuniz/validador-CPF)
 ![GitHub language count](https://img.shields.io/github/languages/count/emellybmuniz/validador-CPF)
