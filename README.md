@@ -8,7 +8,7 @@
 ![Project Status](https://img.shields.io/badge/Status%20-%20Completed%20-%20%234BC21E)
 
 
-A simple and intuitive web application built with HTML, CSS, and JavaScript to validate Brazilian CPF (Cadastro de Pessoas Físicas) numbers.
+A simple and intuitive web application, developed with HTML, CSS, and JavaScript, to validate Brazilian CPF (Individual Taxpayer Registration) numbers.
 
 ---
 
